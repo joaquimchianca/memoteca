@@ -5,16 +5,17 @@
 
   <form>
     <label for="pensamento">Pensamento</label>
-    <input type="textarea" id="pensamento" name="pensamento" class="pensamento" placeholder="Digite aqui seu pensamento">
+    <textarea [(ngModel)]="pensamento.conteudo" id="pensamento" name="pensamento" class="pensamento" placeholder="Digite aqui seu pensamento"
+    cols="4" rows="8"></textarea>
 
     <label for="autoria">Autoria ou Fonte</label>
-    <input type="text" name="autoria" id="autoria" class="autoria" placeholder="Insira aqui o autor(a) ou fonte">
+    <input type="text" [(ngModel)]="pensamento.autoria" id="autoria" class="autoria" name="autoria" placeholder="Insira aqui o autor(a) ou fonte">
 
     <label for="modelo">Selecione o modelo do card: </label>
     <div class="container-radio">
       <div class="radio-modelo">
         <label for="modelo1">
-          <input type="radio" name="modelo-card" id="modelo1" value="modelo1">
+          <input type="radio" name="modelo-card" id="modelo1" value="modelo1" [(ngModel)]="pensamento.modelo">
           <div class="custom-radio">
             <span></span>
           </div>
@@ -23,13 +24,13 @@
         <p class="radio-nome previa">Prévia: </p>
         <div class="modelo modelo1 ff-roboto-mono">
           <img src="../../../../assets/img/modelo1.png" alt="aspas azul escuro">
-          <p class="conteudo">Aqui vai o pensamento</p>
-          <p class="autoria"><b>Aqui vai a autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
       <div class="radio-modelo">
         <label for="modelo2">
-          <input type="radio" name="modelo-card" id="modelo2" value="modelo2">
+          <input type="radio" name="modelo-card" id="modelo2" value="modelo2" [(ngModel)]="pensamento.modelo">
           <div class="custom-radio">
             <span></span>
           </div>
@@ -38,13 +39,13 @@
         <p class="radio-nome previa">Prévia: </p>
         <div class="modelo modelo2 ff-roboto-mono">
           <img src="../../../../assets/img/modelo2.png" alt="aspas azul claro">
-          <p class="conteudo">Aqui vai o pensamento</p>
-          <p class="autoria"><b>Aqui vai a autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
       <div class="radio-modelo">
         <label for="modelo3">
-          <input type="radio" name="modelo-card" id="modelo3" value="modelo3">
+          <input type="radio" name="modelo-card" id="modelo3" value="modelo3" [(ngModel)]="pensamento.modelo">
           <div class="custom-radio">
             <span></span>
           </div>
@@ -53,14 +54,14 @@
         <p class="radio-nome previa">Prévia: </p>
         <div class="modelo modelo3 ff-roboto-mono">
           <img src="../../../../assets/img/modelo3.png" alt="aspas verdes">
-          <p class="conteudo">Aqui vai o pensamento</p>
-          <p class="autoria"><b>Aqui vai a autoria</b></p>
+          <p class="conteudo">{{ pensamento.conteudo }}</p>
+          <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
         </div>
       </div>
     </div>
     <div class="acoes">
-      <button class="botao">Salvar</button>
-      <button class="botao cancelar">Cancelar</button>
+      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button (click)="cancelar()" class="botao cancelar">Cancelar</button>
     </div>
   </form>
 
