@@ -4,6 +4,19 @@ d-flex {
   gap: 2rem;
 }
 
+.mural {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+}
+
+.sem-pensamentos {
+  text-align: center;
+  padding: 2rem 0 5rem;
+}
+
 .botao {
   cursor: pointer;
   font-size: 17px;
