@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class ListarPensamentosComponent {
 
+  listaPensamentos = [
+    {
+      conteudo: "Remember feeling broke as fuck?",
+      autoria: "Nav",
+      modelo: "modelo1"
+    },
+    {
+      conteudo: "I pass the ball, I don't layup",
+      autoria: "Lil Baby",
+      modelo: "modelo2"
+    }
+  ];
+
 }
