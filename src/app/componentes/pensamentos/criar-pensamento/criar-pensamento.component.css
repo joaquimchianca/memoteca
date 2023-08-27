@@ -83,7 +83,7 @@ input[type='radio'] { display: none; }
 }
 
 .custom-radio {
-  border: 1px solid #154580;
+  border: 2px solid #154580;
   width: 30px;
   height: 30px;
   display: grid;
@@ -92,8 +92,7 @@ input[type='radio'] { display: none; }
   cursor: pointer;
 }
 
-.custom-radio,
-span {
+.custom-radio, span {
   transition: 0.5s ease;
   color: #154580;
 }
@@ -106,17 +105,22 @@ span {
   background: transparent
 }
 
-input[type='radio']:checked+.custom-radio {
+.custom-radio:hover{
+  background-color: #D6F6FF;
+  transition: none;
+}
+
+input[type='radio']:checked + .custom-radio {
   border-color: #154580;
 }
 
-input[type='radio']:checked+.custom-radio span {
-  border-color: #154580;
+input[type='radio']:checked + .custom-radio span {
+  background: #154580;
 }
 
 .radio-nome {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   color: #444444;
 }
 

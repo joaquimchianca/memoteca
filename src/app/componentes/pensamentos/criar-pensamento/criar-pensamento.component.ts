@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Pensamento } from '../IPensamento';
+import { PensamentoService } from '../pensamento/pensamento.service';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -8,15 +9,16 @@ import { Pensamento } from '../IPensamento';
 })
 export class CriarPensamentoComponent {
 
+  constructor(private service: PensamentoService) {  }
+
   pensamento: Pensamento = {
-    id: 9,
-    conteudo: "There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing outside of yourself.",
-    autoria: "Miyamoto Musashi",
+    conteudo: "",
+    autoria: "",
     modelo: ""
   }
 
   criarPensamento() {
-    alert("Pensamento criado!")
+    this.service.criar(this.pensamento).subscribe()
   }
 
   cancelar() {
