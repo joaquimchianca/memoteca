@@ -1,0 +1,28 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Veni, vidi, vici.",
+      "autoria": "Júlio César",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Eu não tenho medo de um exército de leões liderado por uma ovelha; eu tenho medo de um exército de ovelhas liderado por um leão.",
+      "autoria": "Alexandre, o Grande",
+      "modelo": "modelo2"
+    },
+    {
+      "id": 3,
+      "conteudo": "A coragem não é ter a força para seguir adiante; é ir adiante quando você não tem força.",
+      "autoria": "Napoleão Bonaparte",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 4,
+      "conteudo": "Um homem não é completado até que ele tenha filhos, plantado uma árvore e escrito um livro.",
+      "autoria": "Genghis Khan",
+      "modelo": "modelo1"
+    }
+  ]
+}
