@@ -4,6 +4,7 @@ Um mural de pensamentos, que permite o usuário adicionar novos pensamentos, edi
 Projeto feito ao longo do curso de Angular da plataforma Alura.
 
 <img src="./docs/memoteca-tela.png">
+
 ## Ferramentas
 **Angular**: Este projeto foi feito por meio do framework Angular junto da [Angular CLI](https://github.com/angular/angular-cli) versão 16.2.0. O Angular foi importante na criaçÃo de componentes, roteamento das páginas e consumo da API.
 
