@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Pensamento } from '../IPensamento';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pensamento',
@@ -10,6 +11,7 @@ export class PensamentoComponent {
 
   // precisa ser inicializado
   @Input() pensamento: Pensamento = {
+    id: 0,
     conteudo: "",
     autoria: "",
     modelo: ""
@@ -21,6 +23,5 @@ export class PensamentoComponent {
     }
     return 'pensamento-p'
   }
-
 
 }
