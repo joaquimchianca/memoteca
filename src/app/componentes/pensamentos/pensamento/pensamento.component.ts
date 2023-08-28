@@ -10,10 +10,9 @@ export class PensamentoComponent {
 
   // precisa ser inicializado
   @Input() pensamento: Pensamento = {
-    id: 0,
-    conteudo: "Chase a check, never chase a bitch",
-    autoria: "Future",
-    modelo: "modelo3"
+    conteudo: "",
+    autoria: "",
+    modelo: ""
   }
 
   tamanhoPensamento(): string {
